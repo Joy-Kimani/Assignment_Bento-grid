@@ -10,7 +10,7 @@ body{
     gap: 1em;
     padding: 10px 10px 10px 10px;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 10em 10em 10em;
+    grid-template-rows: 14em 14em 14em;
     background-color: aqua;
     /* grid-template-areas:
         "seven one one four"
@@ -29,8 +29,8 @@ body{
     gap: 1em;
  }
 .card1{
-    background-color: blueviolet;
-    color:#fff;
+    background-color: hsl(256, 67%, 59%);
+    color: hsl(0, 0%, 100%);
     grid-area: one;
     border-radius: 10px;
     display: flex;
@@ -53,155 +53,163 @@ body{
     height: auto;
 }
 .card2{
-    background-color: lightcoral;
-    color: #000;
+    background-color:hsl(31, 66%, 93%);
+    color: hsl(0, 0%, 7%);
     grid-area: two;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     padding: 1rem;
     overflow: hidden;
-    text-align: center;
 }
 .card2 h2{
-    font-size: 1.1rem;
-    margin-bottom: 0.5rem;
-}
-.card2 h4{
-    font-size: 15px;
+    font-size: 2.1rem;
+    margin-top: 0.5rem;
 }
 .card2 img{
     height: auto;
     max-width: 100%;
 }
 .card3{
-    background-color: lightpink;
-    color: #000;
+    background-color: hsl(39, 100%, 71%);
+    color: hsl(0, 0%, 7%);
     grid-area: three;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     padding: 1rem;
     overflow: hidden;
-    text-align: center;
 }
 .card3 h2{
-    font-size: 1rem;
+    font-size: 1.8rem;
     margin-bottom: 0.5rem;
 }
 .card3 img{
-    max-width: 90%;
-    height: auto;
+    max-width: 100%;
+    height:60%;
 }
 .card4{
-    background-color: red;
+    background-color:hsl(254, 88%, 90%);
+    color: hsl(0, 0%, 7%);
     grid-area: four;
     border-radius: 10px;
     display: flex;
     grid-row: span 2;
     flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
+    /* justify-content: flex-end;
+    align-items: center; */
     padding: 1rem;
-    overflow: hidden;
-    text-align: center;  
+    overflow: hidden; 
 }
 .card4 h2{
-    font-size: 1 rem;
+    font-size: 1.8rem;
     margin-bottom: 0.7rem;
 }
 .card4 h4{
-    font-size: 14px;
+    font-size: 1.2rem;
+    padding-bottom: 40px ;
 }
 .card4 img{
-    width: 120px;
-    height: 100px;
+    width: 100%;
+    height: 100%;
     padding: 10px 0 0px 10px;
 }
 .card5{
-    background-color: red ;
-    color: #fff;
+    background-color: hsl(256, 67%, 59%) ;
+    color:hsl(0, 0%, 100%);
     grid-area: five;
     border-radius: 10px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     overflow: hidden;
-    text-align: center;
     padding: 1em;  
 }
 .card5 h2{
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-bottom: 0.5rem;
 }
 .card6{
-    background-color: pink;
+    background-color: hsl(31, 66%, 93%);
+    color: hsl(0, 0%, 7%);
     grid-area: six;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;  
+    justify-content: flex-start;
+    /* align-items: center;   */
     padding: 1rem;
     overflow: hidden;
-    text-align: center;  
 }
 .card6 h2{
-    font-size: 1 rem;
-    margin-bottom: 0.7rem;
+    font-size: 2rem;
+    margin-bottom: 0.1rem;
 }
-.card6 h4{
-    font-size: 14px;
+.card6 h3{
+    font-size: 1rem;
 }
 .card6 img{
-    width: 120px;
-    height: 100px;
-    padding: 10px 0 0px 10px;
+    width: 100%;
+    height: 90%;
+    padding: 0 0 10px 0;
 }
 .card7{
-    background-color:green ;
+    background-color: hsl(31, 66%, 93%) ;
+    color: hsl(0, 0%, 7%);
     grid-area: seven;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 1rem;
+    padding: 8px;
     overflow: hidden;
-    text-align: center; 
     grid-row: 1;  
 }
 .card7 h2{
-    font-size: 1 rem;
-    margin-bottom: 0.7rem;
-}
-.card7 h4{
-    font-size: 14px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 2rem;
+    margin-bottom: 0.8rem;
 }
 .card7 img{
-    width: auto;
-    height: 100%;
+    width: 70%;
+    height:auto;
+    padding: 0.5rem;
 }
 .card8{
-    background-color: greenyellow;
+    background-color: hsl(39, 100%, 71%);
+    color: hsl(0, 0%, 7%);
     grid-area: seven;
     grid-row: 2 ;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    padding: 1rem;
+    padding: 8px 4px 8px 4px;
     overflow: hidden;
-    text-align: center;  
 }
-
-
-
+.card8 h2{
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+.card5 img,
+.card8 img {
+  width: 95%;
+  height: 90%;
+  object-fit: contain;   
+  display: flex;
+  justify-content: center;
+  border-radius: 8px;
+  padding: 0.7rem;
+}
+/* .card1, .card2, .card3, .card4,
+.card5, .card6, .card7, .card8 {
+  outline: 2px dashed red;
+} */
 /* @media only screen and (max-width: 600px) {
   .card1 {grid-area: 1 / span 4;}
   .card2 {grid-area: 2 / span 4;}
@@ -212,42 +220,106 @@ body{
   .card7 {grid-area: 7 / span 4;}
   .card8 {grid-area: 8 / span 4;}
 } */
+/*TABLET VIEW*/
+@media (max-width: 992px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+      "one two"
+      "five four"
+      "three six"
+      "seven seven";
+  }
+  .seven-eight {
+    display: seven;
+    flex-direction: column;
+    gap: 1em;
+  }
+  .card7{
+    grid-area: seven;
+    grid-column: 1;
+  }
+  .card8{
+    grid-area: seven;
+    grid-column:2 ;
+  }
 
-/* .card2 img,
-.card3 img,
-.card4 img,
-.card6 img,
-.card7 img {
-  max-width: 80%;
-  height: auto;
-} */
-.card5 img,
-.card8 img {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-  max-height: 100%;
-  object-fit: contain;   
-  display: block;
-  border-radius: 8px;
+  .card1 img,
+  .card2 img,
+  .card3 img,
+  .card4 img,
+  .card5 img,
+  .card6 img,
+  .card7 img,
+  .card8 img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .card1 h2,
+  .card2 h2,
+  .card3 h2,
+  .card4 h2,
+  .card5 h2,
+  .card6 h2,
+  .card7 h2,
+  .card8 h2 {
+    font-size: 1.4rem;
+  }
+
+  .card5 {
+    flex-direction: column;
+    align-items: center;
+  }
 }
-/* .card1, .card2, .card3, .card4,
-.card5, .card6, .card7, .card8 {
-  padding: 1rem;
-  overflow: hidden;
-  text-align: center;
-} */
 
-/* .card1 h2, .card2 h2, .card3 h2 {
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
+/* MOBILE VIEW*/
+@media (max-width: 600px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "one"
+      "two"
+      "three"
+      "four"
+      "six"
+      "five"
+      "seven";
+  }
+
+  .card1, .card2, .card3, .card4,
+  .card5, .card6, .card7, .card8 {
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .card1 img,
+  .card2 img,
+  .card3 img,
+  .card4 img,
+  .card5 img,
+  .card6 img,
+  .card7 img,
+  .card8 img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .card1 h2,
+  .card2 h2,
+  .card3 h2,
+  .card4 h2,
+  .card5 h2,
+  .card6 h2,
+  .card7 h2,
+  .card8 h2 {
+    font-size: 1.2rem;
+  }
+
+  .card5 h2 {
+    font-size: 1.5rem;
+  }
 }
-.card1 h4, .card2 h4, .card3 h4 {
-  font-size: 0.9rem;
-} */
-.card1, .card2, .card3, .card4,
-.card5, .card6, .card7, .card8 {
-  outline: 2px dashed red;
-}
-
-
