@@ -138,7 +138,6 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    /* align-items: center;   */
     padding: 1rem;
     overflow: hidden;
 }
@@ -168,9 +167,8 @@ body{
     grid-row: 1;  
 }
 .card7 h2{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    display: block;
+    /* justify-content: flex-start; */
     font-size: 2rem;
     margin-bottom: 0.8rem;
 }
@@ -210,16 +208,14 @@ body{
 .card5, .card6, .card7, .card8 {
   outline: 2px dashed red;
 } */
-/* @media only screen and (max-width: 600px) {
-  .card1 {grid-area: 1 / span 4;}
-  .card2 {grid-area: 2 / span 4;}
-  .card3 {grid-area: 3 / span 4;}
-  .card4 {grid-area: 4 / span 4;}
-  .card5 {grid-area: 5 / span 4;}
-  .card6 {grid-area: 6 / span 4;}
-  .card7 {grid-area: 7 / span 4;}
-  .card8 {grid-area: 8 / span 4;}
-} */
+#x{
+    color: yellow;
+}
+#quicker{
+    display: block;
+    color: blueviolet;
+    font-style: italic;
+}
 /*TABLET VIEW*/
 @media (max-width: 992px) {
   .container {
