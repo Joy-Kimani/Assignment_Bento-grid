@@ -1,81 +1,142 @@
 body{
     font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 0;
+    margin: 0;
 }
 .container{
-    width: 90%;
+    width: 95%;
     max-width: 1200px;
     display: grid;
     gap: 1em;
     padding: 10px 10px 10px 10px;
-    grid-template-columns:1fr 1fr 1fr 1fr ;
-    grid-template-rows: 13em 13em 13em 13em;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 10em 10em 10em;
     background-color: aqua;
-    /* justify-content: center;
-    align-items: center; */
-    /* grid-template-areas: 
-    ""
-    ""
-    ""
-    ""; */
-    grid-template-areas:
+    /* grid-template-areas:
         "seven one one four"
         "seven two three four"
         "eight two three four"
-        "eight six five five";
-
+        "eight six five five"; */
+    grid-template-areas:
+         "seven one one four"
+         "seven two three four"
+         "seven six five five";
 }
+ .seven-eight{
+    grid-area: seven;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 1em;
+ }
 .card1{
     background-color: blueviolet;
+    color:#fff;
     grid-area: one;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 20px;
+    overflow: hidden;
+    text-align: center;
 }
-/* .card1 img{
-    width: auto;
+.card1 h2{
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+.card1 h4{
+    font-size: 15px;
+}
+.card1 img{
+    max-width: 90%;
     height: auto;
-} */
+}
 .card2{
     background-color: lightcoral;
+    color: #000;
     grid-area: two;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+    padding: 1rem;
+    overflow: hidden;
+    text-align: center;
+}
+.card2 h2{
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+.card2 h4{
+    font-size: 15px;
+}
+.card2 img{
+    height: auto;
+    max-width: 100%;
 }
 .card3{
     background-color: lightpink;
+    color: #000;
     grid-area: three;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+    padding: 1rem;
+    overflow: hidden;
+    text-align: center;
+}
+.card3 h2{
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+.card3 img{
+    max-width: 90%;
+    height: auto;
 }
 .card4{
     background-color: red;
     grid-area: four;
     border-radius: 10px;
     display: flex;
+    grid-row: span 2;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
-    
+    padding: 1rem;
+    overflow: hidden;
+    text-align: center;  
+}
+.card4 h2{
+    font-size: 1 rem;
+    margin-bottom: 0.7rem;
+}
+.card4 h4{
+    font-size: 14px;
+}
+.card4 img{
+    width: 120px;
+    height: 100px;
+    padding: 10px 0 0px 10px;
 }
 .card5{
     background-color: red ;
+    color: #fff;
     grid-area: five;
     border-radius: 10px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    
+    overflow: hidden;
+    text-align: center;
+    padding: 1em;  
+}
+.card5 h2{
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
 }
 .card6{
     background-color: pink;
@@ -84,7 +145,22 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; 
+    align-items: center;  
+    padding: 1rem;
+    overflow: hidden;
+    text-align: center;  
+}
+.card6 h2{
+    font-size: 1 rem;
+    margin-bottom: 0.7rem;
+}
+.card6 h4{
+    font-size: 14px;
+}
+.card6 img{
+    width: 120px;
+    height: 100px;
+    padding: 10px 0 0px 10px;
 }
 .card7{
     background-color:green ;
@@ -93,22 +169,37 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;   
+    align-items: center;
+    padding: 1rem;
+    overflow: hidden;
+    text-align: center; 
+    grid-row: 1;  
+}
+.card7 h2{
+    font-size: 1 rem;
+    margin-bottom: 0.7rem;
+}
+.card7 h4{
+    font-size: 14px;
+}
+.card7 img{
+    width: auto;
+    height: 100%;
 }
 .card8{
     background-color: greenyellow;
-    grid-area: eight;
+    grid-area: seven;
+    grid-row: 2 ;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;    
+    align-items: center;
+    padding: 1rem;
+    overflow: hidden;
+    text-align: center;  
 }
 
-/* .card8 img{
-    width: auto;
-    height: auto;
-} */
 
 
 /* @media only screen and (max-width: 600px) {
@@ -121,29 +212,42 @@ body{
   .card7 {grid-area: 7 / span 4;}
   .card8 {grid-area: 8 / span 4;}
 } */
-.card1 img,
-.card2 img,
+
+/* .card2 img,
 .card3 img,
 .card4 img,
-.card5 img,
 .card6 img,
-.card7 img,
+.card7 img {
+  max-width: 80%;
+  height: auto;
+} */
+.card5 img,
 .card8 img {
+  width: 100%;
   max-width: 100%;
   height: auto;
+  max-height: 100%;
+  object-fit: contain;   
+  display: block;
+  border-radius: 8px;
 }
-
-.card1, .card2, .card3, .card4,
+/* .card1, .card2, .card3, .card4,
 .card5, .card6, .card7, .card8 {
   padding: 1rem;
   overflow: hidden;
   text-align: center;
-}
+} */
 
-.card1 h2, .card2 h2, .card3 h2 {
+/* .card1 h2, .card2 h2, .card3 h2 {
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
 }
 .card1 h4, .card2 h4, .card3 h4 {
   font-size: 0.9rem;
+} */
+.card1, .card2, .card3, .card4,
+.card5, .card6, .card7, .card8 {
+  outline: 2px dashed red;
 }
+
+
